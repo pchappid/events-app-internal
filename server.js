@@ -14,7 +14,7 @@ const app = express();
 // the backend server will parse json, not a form request
 app.use(bodyParser.json());
 
-// allow AJAX calls from 3rd party domains
+// allow AJAX calls from third party domains
 app.use(function (req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*");
     res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, MERGE, GET, DELETE, OPTIONS');
